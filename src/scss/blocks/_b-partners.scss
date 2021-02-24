@@ -1,0 +1,55 @@
+.b-partners {
+    padding: 100px 0 120px;
+
+    @media (max-width: $tabWidth){
+        padding: 70px 0;
+    }
+    @media (max-width: $mobWidth){
+        padding: 30px 0;
+    }
+
+
+    &__cnt {
+        align-items: stretch;
+    }
+    
+    h2 {
+    }
+    &__title{
+        @media (max-width: $tabSmlWidth){
+            width: 100%;
+        }
+    }
+    &__desc{
+        @media (max-width: $tabSmlWidth){
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+    
+    &__slider {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .owl-stage{
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    
+}
+
+.b-partner-logo {
+    display: block;
+    margin: 15px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+    }
+}

@@ -1,0 +1,82 @@
+.b-lead-form{
+    background-image: url(/images/bg-lead-form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+     
+    &__cnt{
+        // align-items: center;
+        align-items: stretch;
+    }
+
+    &__col{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &_info{
+            h2{
+                margin-bottom: 0.5em;
+            }
+        }
+        &_green{
+            background-color: var(--cGreen);
+            position: relative;
+            z-index: 2;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 50vw;
+                height: 100%;
+                background-color: var(--cGreen);
+                top: 0;
+                left: calc( 100% - 50vw );
+                z-index: -1;
+            }
+        }
+        &_grey{
+            background-color: rgba(77, 67, 87, 1);
+            position: relative;
+            z-index: 2;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 50vw;
+                height: 100%;
+                background-color: rgba(77, 67, 87, 1);
+                top: 0;
+                right: calc( 100% - 50vw );
+                z-index: -1;
+            }
+            // rgba(77, 67, 87, 1)
+        }
+        &_img{
+            position: relative;
+            z-index: 2;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 50vw;
+                height: 100%;
+                // background-color: rgba(77, 67, 87, 1);
+                background-image: var(--background);
+                top: 0;
+                left: calc( 100% - 50vw );
+                z-index: -1;
+            }
+        }
+        
+        &_form{
+            padding-left: 30px;
+            h5{
+                
+            }
+            ul{
+                margin-top: 1em;
+            }
+            form{
+                margin-top: 1em;
+            }
+        }
+    }
+}

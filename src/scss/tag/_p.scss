@@ -1,0 +1,10 @@
+p:empty{
+    // display: none !important;
+}
+p{
+    margin-bottom: 1em;
+    line-height: 1.5em;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

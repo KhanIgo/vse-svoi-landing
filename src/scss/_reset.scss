@@ -1,0 +1,13 @@
+a{
+  color: inherit;
+}
+p{
+  color: inherit;
+  a{
+    color: inherit;
+  }
+}
+ul, li, div, span, a, p{
+  margin: 0;
+  padding: 0;
+}

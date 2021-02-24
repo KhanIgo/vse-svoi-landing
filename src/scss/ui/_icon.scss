@@ -1,0 +1,91 @@
+.icon{
+    width: 1em;
+    height: 1em;
+    background-color: currentColor;
+
+    &_address{
+        @include mask-icon('images/icon-address.png');
+    }
+    &_phone{
+        font-size: 1.2em;
+        @include mask-icon('img/icon/icon-phone.svg');
+    }
+    &_email{
+        font-size: 1.1em;
+        @include mask-icon('img/icon/icon-email.svg');
+    }
+    &_ellipsis{
+        // font-size: 1.1em;
+        width: 2.5em;
+        height: 1em;
+        @include mask-icon('img/icon/icon-ellipsis.svg');
+        @include mask-size(cover);
+    }
+    &_dropdown{
+        // font-size: 1.1em;
+        width: 8px;
+        height: 6px;
+        @include mask-icon('img/icon/icon-dropdown.png');
+        // @include mask-size(cover);
+        background-color: #fff;
+    }
+    &_star{
+        @include mask-icon('img/icon/icon-star.svg');
+        background-color: var(--cStar);
+    }
+
+    &_play{
+        display: block;
+        width: 1em;
+        height: 1em;
+        background-image: url('img/icon/icon-play.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &_menu{
+        background-color: transparent;
+        position: relative;
+        width: 2em;
+        height: 0.9em;
+        &:before, &:after{
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 2em;
+            height: 2px;
+            background-color: white;
+        }
+        &:after{
+            width: 1.15em;
+            bottom: 0;
+        }
+    }
+}
+.icon_marker{
+    // display: block;
+    display: inline-block;
+    @extend .icon;
+    width: 0.8em;
+    @include mask-icon('img/icon/icon_map-marker.svg');
+}
+.icon_clock{
+    display: inline-block;
+    @extend .icon;
+    @include mask-icon('img/icon/icon_clock.svg');
+}
+.icon_phone{
+    display: inline-block;
+    @extend .icon;
+    @include mask-icon('img/icon/icon_phone.svg');
+}
+.icon_envelope{
+    display: inline-block;
+    @extend .icon;
+    @include mask-icon('img/icon/icon_envelope.svg');
+}
+
+// 
+// 
+// 

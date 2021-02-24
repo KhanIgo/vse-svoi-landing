@@ -1,0 +1,16 @@
+.b-map {
+    padding: 45px 0;
+    @media (max-width: $mobWidth){
+        padding: 20px 0;
+    }
+    &__cnt {
+    }
+    &__title {
+        margin-bottom: 70px;
+        @media (max-width: $mobWidth){
+            margin-bottom: 25px;
+        }
+        h3 {
+        }
+    }
+}

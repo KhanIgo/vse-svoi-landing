@@ -1,0 +1,44 @@
+.b-social {
+    display: inline-block;
+    color: inherit;
+    background-color: currentColor;    
+    @include mask-pos(center);
+    @include mask-rep(no-repeat);
+    @include mask-size(contain);
+    width: 1em;
+    height: 1em;
+    margin-right: 1.5em;
+    &:last-of-type{ margin-right: 0; } 
+
+    &_tg{
+        width: 1.25em;
+        @include mask('img/icon/soc-teleg.svg');
+    }
+    &_fb{
+        width: 0.6em;  
+        height: 1.2em;
+        @include mask('img/icon/soc-face.svg');
+    }
+    &_ig{
+        width: 1.25em;
+        height: 1.25em;
+        @include mask('img/icon/soc-inst.svg');
+    }
+    &_ig-r{
+        width: 2em;
+        height: 2em;
+        @include mask('img/icon/soc-inst_r.svg');
+    }
+    &_vk{
+        width: 1.75em;
+        @include mask('img/icon/soc-vk.svg');
+    }
+    &_vk-r{
+        width: 2em;
+        height: 2em;
+        @include mask('img/icon/soc-vk_r.svg');
+    }
+}
+
+
+

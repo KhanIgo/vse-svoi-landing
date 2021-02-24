@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body{
+    // padding-top: 20px;
+    width: 100vw;
+    font-family: 'Montserrat';
+    // overflow-x: hidden;
+    // font-family: 'Proxima Nova';
+    font-size: 16px;
+    // padding-top: 80px;
+
+
+    background-image: url(/images/8688f1bc9809557640894a20ce0f8252.jpeg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 300px 300px;
+
+    @media (max-width: $tabWidth){
+        // padding-top: 60px;
+    }
+    @media (max-width: $mobWidth){
+        // padding-bottom: 60px;
+    }
+    // @media (max-width: 1450px){
+    //     width: 1450px;
+    //     >.row{
+    //         overflow: hidden;
+    //     }
+    // }pt79    
+    // @media (max-width: 860px){
+    //     padding-top: 50px;
+    //     padding-bottom: 50px;
+    // }
+}

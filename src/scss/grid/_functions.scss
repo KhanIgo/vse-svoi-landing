@@ -1,0 +1,71 @@
+@function strip-unit($value, $newUnit: "") {
+    $units: (
+        'px':   0px,
+        'cm':   0cm,
+        'mm':   0mm,
+        '%':    0%,
+        'ch':   0ch,
+        'in':   0in,
+        'em':   0em,
+        'rem':  0rem,
+        'pt':   0pt,
+        'pc':   0pc,
+        'ex':   0ex,
+        'vw':   0vw,
+        'vh':   0vh,
+        'vmin': 0vmin,
+        'vmax': 0vmax,
+        'deg':  0deg,
+        'turn': 0turn,
+        'rad':  0rad,
+        'grad': 0grad,
+        's':    0s,
+        'ms':   0ms,
+        'Hz':   0Hz,
+        'kHz':  0kHz,
+        'dppx': 0dppx,
+        'dpcm': 0dpcm,
+        'dpi':  0dpi,
+    );
+
+    $number: $value / ($value * 0 + 1);
+
+    @if ($newUnit == "") {
+        @return $number;
+    }
+
+    @if map-has-key($units, $newUnit) {
+        @return map-get($units, $newUnit) + $number;
+    }
+
+    @error "Unknown unit `#{$newUnit}`.";
+}
+
+@function str-replace($string, $substr, $newsubstr, $all: 0) {
+  $position-found: str-index($string, $substr);
+  $processed: ();
+
+  @while ($position-found and $position-found > 0) {
+    $length-substr: str-length($substr);
+    @if (1 != $position-found) {
+      $processed: append($processed, str-slice($string, 0, $position-found - 1));
+    }
+    $processed: append($processed, $newsubstr);
+    $string: str-slice($string, $position-found + $length-substr);
+
+    $position-found: 0;
+
+    @if ($all > 0) {
+      $position-found: str-index($string, $substr);
+    }
+  }
+
+  $processed: append($processed, $string);
+  $string: "";
+
+  @each $s in $processed {
+    $string: #{$string}#{$s};
+  }
+
+  @return $string;
+}

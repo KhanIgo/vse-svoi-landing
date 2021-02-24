@@ -1,0 +1,14 @@
+.b-logo{
+    width: 20.3em;
+    height: 7em;
+    background-color: currentColor;
+    @include mask('img/logo.svg');
+    @include mask-size(contain);
+    @include mask-rep(no-repeat);
+    @include mask-pos(left center);
+
+
+    &_footer{
+        font-size: 0.75em;
+    }
+}

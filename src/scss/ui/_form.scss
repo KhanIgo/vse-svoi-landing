@@ -1,0 +1,24 @@
+.ui-form{
+    display: flex;
+    flex-wrap: wrap;
+
+    &_lead{
+        justify-content: space-between;
+        color: white;
+    }
+}
+
+.ui-form-inp{
+    margin-bottom: 1.5em;
+
+    &_name{
+        width: 55%;
+    }
+    &_phone{
+        width: 35%;
+    }
+    
+    &_subm{
+        width: 100%;
+    }
+}

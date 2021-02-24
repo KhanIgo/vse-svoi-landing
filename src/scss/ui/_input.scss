@@ -1,0 +1,88 @@
+input{
+    &[type=text], &[type=email], &[type=number]{
+        width: 100%;
+        // border: solid 2px #cecece;
+        padding: 0.9em 1em;
+        outline: none;
+        // border-radius: 8px;
+        border-bottom: solid 2px white;
+        color: white;
+        background: transparent !important;
+        font-size: 0.87em;
+
+
+        @media (max-width: $mobWidth){
+            font-size: 0.85em;
+            padding: 0.75em 1em;
+            border-width: 1px;
+            border-radius: 3px;
+        }
+    }
+    &::placeholder{
+        color: white;
+    }
+}
+textarea{
+    width: 100%;
+        border: solid 2px #cecece;
+        padding: 0.3em 0.5em;
+        outline: none;
+        border-radius: 8px;
+        font-size: 1.1em;
+        resize: none;
+
+
+        @media (max-width: $mobWidth){
+            font-size: 0.85em;
+            padding: 0.5em;
+            border-width: 1px;
+            border-radius: 3px;
+        }
+}
+
+
+.ui-checkbox{
+    display: flex;
+    
+    &>span{
+        flex-grow: 1;
+        padding-left: 1em;
+    }
+}
+.ui-input{
+    
+    &_checkbox{
+        width: 22px;
+        height: 22px;
+        input{
+            width: 100%;
+            height: 100%;
+        }
+        span{
+            display: none;
+        }
+    }
+
+    &_phone{
+        text-align: center;
+    }
+}
+// input.ui-input{
+//     transition: 350ms ease-in-out;
+//     &_sml{
+//         font-size: 1.4em;
+//         border-width: 1px;
+//         padding: 0.3em 0.2em;
+//     }
+//     &_wa{
+//         width: auto;
+//         text-align: center;
+//         width: 2em;
+//     }
+//     &.has-error{
+//         border-color: red;
+//     }
+//     &_textarea-h100{
+//         height: 100%;  
+//     }
+// }

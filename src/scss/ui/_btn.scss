@@ -1,0 +1,148 @@
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    // padding: 1.55em 1.7em 1.45em;
+    // padding: 0.55em 1.5em;
+    padding: 1em 1.5em;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.75em;
+    // border-radius: 5px;
+    transition: 350ms ease-in-out;
+    // text-transform: uppercase;
+    
+    // @media (max-width: $tabWidth){
+    //     font-size: 0.9em;
+    // }
+    
+    &_menu{
+        padding: 0;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            font-size: 0.95em;
+            margin-right: 1.5em;
+        }
+    }
+    
+    &_prim{
+        background-color: var(--cPrimary);
+        border: solid 1px var(--cPrimary);
+        transition: 350ms ease-in-out;
+        &:hover{
+            background-color: white;
+            color: var(--cPrimary);
+        }
+    }
+    &_light{
+        background-color: white;
+        border: solid 1px white;
+        transition: 350ms ease-in-out;
+        color: var(--cPrimary);
+        &:hover{
+            color: black;
+            background-color: white;
+            border: solid 1px black;
+        }
+    }
+    &_trans{
+        border: solid 1px currentColor;
+        &:hover{
+            // color: black;
+            color: var(--cPrimary);
+            background-color: white;
+            // border: solid 1px black;
+        }
+    }
+
+
+    &_play{
+        padding: 0;
+        font-size: 3.5em;
+    }
+
+    &_ellipsis{
+        // display: flex;
+        // align-items: center;
+        padding: 0;
+        font-size: 1em;
+        width: 2.5em;
+        height: 1em;
+    }
+    &_close{
+        // 
+        // display: block;
+            // position: absolute;
+            // flex-shrink: 0;
+            // flex-grow: 0;
+            padding: 0;  
+            width: 30px;
+            height: 30px;
+            background-color: currentColor;
+            @include mask-rep(no-repeat);
+            @include mask-pos( center);
+            @include mask-size(contain);
+            @include mask('../img/ui/close_window.svg');
+            transition: 250ms ease-in;
+            &:hover{
+                transform: scale(1.1);
+            }
+    }
+    
+    
+    &_huge{
+        padding: 2.25em 4em;
+    }
+    &_huge-2{
+        padding: 2em 2.3em;
+    }
+
+}
+
+
+
+.btn_red{
+    @extend .btn;
+    background-color: var(--cRed);
+    border: solid 1px var(--cRed);
+    color: white;
+    
+    transition: 350ms ease-in-out;
+    &:hover{
+        // background-color: white;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: var(--cRed);
+    }
+}
+.btn_green{
+    @extend .btn;
+    background-color: var(--cGreen);
+    border: solid 1px var(--cGreen);
+    color: white;
+    
+    transition: 350ms ease-in-out;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.9);
+        color: var(--cGreen);
+    }
+}
+
+.btn_full{
+    width: 100%;
+    text-align: center;
+}
+// .Прямоугольник_1_копия_4 {
+    
+//     position: absolute;
+//     left: 240px;
+//     top: 569px;
+//     width: 365px;
+//     height: 90px;
+//     z-index: 125;
+//   }
+  

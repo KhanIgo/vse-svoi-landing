@@ -1,0 +1,26 @@
+.b-video-banner {
+    width: 100%;
+    max-width: 935px;
+    position: relative;
+    &__img {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    &__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+        // &.btn_play{
+        // }
+        // &.btn{
+        // }
+    }
+    .icon {
+        &_play{
+        }
+    }
+}

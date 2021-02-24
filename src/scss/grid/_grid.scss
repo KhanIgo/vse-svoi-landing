@@ -1,0 +1,33 @@
+@import 'functions';
+@import 'vars';
+@import 'mixins';
+@import 'cnt-row';
+
+
+
+.flex{
+    display: flex;
+}
+// sm 500
+// md 600
+// lg 980
+// xl 1280
+// xxl 1920
+
+@include grid('gr-', '');
+
+@media (min-width: $smWidth){
+    @include grid('gr-', '-sm');
+}
+@media (min-width: $mdWidth){
+    @include grid('gr-', '-md');
+}
+@media (min-width: $lgWidth){
+    @include grid('gr-', '-lg');
+}
+@media (min-width: $xlWidth){
+    @include grid('gr-', '-xl');
+}
+@media (min-width: $xxlWidth){
+    @include grid('gr-', '-xxl');
+}

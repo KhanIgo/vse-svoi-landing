@@ -1,0 +1,357 @@
+@mixin grid($prefix, $suffix){
+    @for $i from 1 through $gridColsQty{
+        .#{$prefix}#{$i}#{$suffix}{
+            $width: 100%*$i/$gridColsQty;
+            @include grid-item($width);
+        }
+    }
+    
+    @include grow($suffix);
+    @include shrink($suffix);
+    @include order($suffix);
+    @include px0($suffix);
+    @include py0($suffix);
+    @include mx0($suffix);
+    @include my0($suffix);
+    @include mt($suffix);
+    @include mb($suffix);
+    @include ml($suffix);
+    @include mr($suffix);
+    @include pt($suffix);
+    @include pb($suffix);
+    @include pl($suffix);
+    @include pr($suffix);
+    @include screen-h($suffix);
+    @include direction($suffix);
+    @include justify($suffix);
+    @include align($suffix);
+    @include fit($suffix);
+    @include hidden($suffix);
+    @include visible($suffix);
+    @include font-size($suffix);
+//    @include font-weight;
+}
+
+
+
+@mixin grid-item($width){
+    width: #{$width};
+    flex: #{$width} 0 0;
+}
+
+
+@mixin grow($suffix){
+    @for $i from 1 through $flexGrowQty{
+        $className: grow- + $i + $suffix;
+        .#{$className}{
+            flex-grow: $i;
+        }
+    }
+}
+@mixin shrink($suffix){
+    @for $i from 1 through $flexShrinkQty{
+        $className: shrink- + $i + $suffix;
+        .#{$className}{
+            flex-shrink: $i;
+        }
+    }
+}
+@mixin order($suffix){
+    @for $i from 1 through $flexOrderQty{
+        $className: order- + $i + $suffix;
+        .#{$className}{
+            order: $i;
+        }
+    }
+}
+@mixin px0($suffix){
+    $className: px-0 + $suffix;
+    .#{$className}{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    $className: pr-0 + $suffix;
+    .#{$className}{
+        padding-right: 0;
+    }
+    $className: pl-0 + $suffix;
+    .#{$className}{
+        padding-left: 0;
+    }
+}
+@mixin py0($suffix){
+    $className: py-0 + $suffix;
+    .#{$className}{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    $className: pt-0 + $suffix;
+    .#{$className}{
+        padding-top: 0;
+    }
+    $className: pb-0 + $suffix;
+    .#{$className}{
+        padding-bottom: 0;
+    }
+}
+@mixin mx0($suffix){
+    $className: mx-0 + $suffix;
+    .#{$className}{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    $className: mr-0 + $suffix;
+    .#{$className}{
+        margin-right: 0;
+    }
+    $className: ml-0 + $suffix;
+    .#{$className}{
+        margin-left: 0;
+    }
+}
+@mixin my0($suffix){
+    $className: my-0 + $suffix;
+    .#{$className}{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    $className: mt-0 + $suffix;
+    .#{$className}{
+        margin-top: 0;
+    }
+    $className: mb-0 + $suffix;
+    .#{$className}{
+        margin-bottom: 0;
+    }
+}
+@mixin direction($suffix){
+    $className: dir-row + $suffix;
+    .#{$className}{
+        flex-direction: row;
+    }
+    $className: dir-row-rev + $suffix;
+    .#{$className}{
+        flex-direction: row-reverse;
+    }
+    $className: dir-col + $suffix;
+    .#{$className}{
+        flex-direction: column;
+    }
+    $className: dir-col-rev + $suffix;
+    .#{$className}{
+        flex-direction: column-reverse;
+    }
+}
+@mixin align($suffix){
+    $className: al-center + $suffix;
+    .#{$className}{
+        align-items: center;
+    }
+    $className: al-start + $suffix;
+    .#{$className}{
+        align-items: flex-start;
+    }
+    $className: al-end + $suffix;
+    .#{$className}{
+        align-items: flex-end;
+    }
+    $className: al-stretch + $suffix;
+    .#{$className}{
+        align-items: stretch;
+    }
+}
+@mixin justify($suffix){
+    $className: just-center + $suffix;
+    .#{$className}{
+        justify-content: center;
+    }
+    $className: just-around + $suffix;
+    .#{$className}{
+        justify-content: space-around;
+    }
+    $className: just-between + $suffix;
+    .#{$className}{
+        justify-content: space-between;
+    }
+    $className: just-start + $suffix;
+    .#{$className}{
+        justify-content: flex-start;
+    }
+    $className: just-end + $suffix;
+    .#{$className}{
+        justify-content: flex-end;
+    }
+    $className: just-stretch + $suffix;
+    .#{$className}{
+        justify-content: stretch;
+    }
+}
+@mixin mt($suffix){
+    $through: $margin/$marginStep;
+    @for $i from 0 through $through{
+        $marVal: $i * $marginStep;
+        $marVal: strip-unit( $marVal );
+        $className: mt- + $marVal + $suffix;
+        .#{$className}{
+            margin-top: $marVal +px;
+        }
+    }
+    $className: mt-auto + $suffix;
+    .#{$className}{
+        margin-top: auto;
+    }
+}
+@mixin mb($suffix){
+    $through: $margin/$marginStep;
+    @for $i from 0 through $through{
+        $marVal: $i * $marginStep;
+        $marVal: strip-unit( $marVal );
+        $className: mb- + $marVal + $suffix;
+        .#{$className}{
+            margin-bottom: $marVal +px;
+        }
+    }
+    $className: mb-auto + $suffix;
+    .#{$className}{
+        margin-bottom: auto;
+    }
+}
+@mixin ml($suffix){
+    $through: $margin/$marginStep;
+    @for $i from 0 through $through{
+        $marVal: $i * $marginStep;
+        $marVal: strip-unit( $marVal );
+        $className: ml- + $marVal + $suffix;
+        .#{$className}{
+            margin-left: $marVal +px;
+        }
+    }
+    $className: ml-auto + $suffix;
+    .#{$className}{
+        margin-left: auto;
+    }
+}
+@mixin mr($suffix){
+    $through: $margin/$marginStep;
+    @for $i from 0 through $through{
+        $marVal: $i * $marginStep;
+        $marVal: strip-unit( $marVal );
+        $className: mr- + $marVal + $suffix;
+        .#{$className}{
+            margin-right: $marVal +px;
+        }
+    }
+    $className: mr-auto + $suffix;
+    .#{$className}{
+        margin-right: auto;
+    }
+}
+@mixin pt($suffix){
+    $through: $margin/$marginStep;
+    @for $i from 0 through $through{
+        $marVal: $i * $marginStep;
+        $marVal: strip-unit( $marVal );
+        $className: pt- + $marVal + $suffix;
+        .#{$className}{
+            padding-top: $marVal +px;
+        }
+    }
+}
+@mixin pb($suffix){
+    $through: $margin/$marginStep;
+    @for $i from 0 through $through{
+        $marVal: $i * $marginStep;
+        $marVal: strip-unit( $marVal );
+        $className: pb- + $marVal + $suffix;
+        .#{$className}{
+            padding-bottom: $marVal +px;
+        }
+    }
+}
+@mixin pl($suffix){
+    $through: $margin/$marginStep;
+    @for $i from 0 through $through{
+        $marVal: $i * $marginStep;
+        $marVal: strip-unit( $marVal );
+        $className: pl- + $marVal + $suffix;
+        .#{$className}{
+            padding-left: $marVal +px;
+        }
+    }
+}
+@mixin pr($suffix){
+    $through: $margin/$marginStep;
+    @for $i from 0 through $through{
+        $marVal: $i * $marginStep;
+        $marVal: strip-unit( $marVal );
+        $className: pr- + $marVal + $suffix;
+        .#{$className}{
+            padding-right: $marVal +px;
+        }
+    }
+}
+@mixin fit($suffix){
+    $className: fit + $suffix;
+    .#{$className}{
+        align-items: stretch;
+        justify-content: stretch;
+    }
+}
+@mixin hidden($suffix){
+    $className: hidden + $suffix;
+    .#{$className}{
+        display: none;
+    }
+}
+@mixin visible($suffix){
+    $className: visible + $suffix;
+    .#{$className}{
+        display: block;
+    }
+}
+@mixin font-size($suffix){
+    $value: 0;
+    @while $value < $fzMax {
+        @include font-size-item($suffix, $value);
+        $value: $value + 1;
+    }
+}
+@mixin font-size-item($suffix, $baseValue){
+    $value: 0;
+    @while $value < 1 {
+        $fsValue: $baseValue+$value+em;
+        $fsClassVal: null;
+        @if $value == 0{}
+        @else{
+            $fsClassVal: $value*10;
+        }
+        
+        $fsClass: #{$baseValue}-#{$fsClassVal};
+        @if $fsClassVal == null {
+            $fsClass: #{$baseValue};
+        }
+        
+        $className: fs-+$fsClass + $suffix;
+        .#{$className}{
+            font-size: $fsValue;
+        }
+        $value: $value + $fzStep;
+    }
+}
+@mixin font-weight(){
+    $value: 100;
+    @while $value <= $fwMax {
+        $className: fw-#{$value};
+        .#{$className}{
+            font-weight: $value;
+        }
+        
+        $value: $value + 100;
+    }
+}
+@mixin screen-h($suffix){
+    $className: vh100+#{$suffix};
+    .#{$className}{
+        min-height: 100vh;
+    }
+}

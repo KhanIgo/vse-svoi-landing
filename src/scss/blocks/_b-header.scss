@@ -1,0 +1,136 @@
+.b-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: 15;
+  display: flex;
+  // background-color: var(--cPrimary);
+  overflow: visible;
+  align-items: stretch;
+  // height: 80px;
+  color: white;
+  padding: 60px 0;
+  @media (max-width: $tabWidth){
+    height: 60px;
+  }
+  @media (max-width: $mobWidth){
+    justify-content: space-between;
+  }
+  
+  &__cnt {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  &__info-row{
+    display: flex;
+    align-items: stretch;
+    
+    &_1{
+      p{
+        display: flex;
+        align-items: center;
+        border-right: solid 1px var(--cGreen);
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        // padding: 0.2em 1em;
+        &:last-of-type{
+          border-right: none;
+          padding-right: 0;
+        }
+      }
+    }
+
+    &_2{
+      p{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+      }
+      span{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-end;
+      }
+      i{
+        margin-left: 0.5em;
+        font-size: 1.2em;
+        color: var(--cGreen);
+      }
+      .address{
+        font-size: 1.12em;
+      }
+      .sub{
+        font-size: 0.75em;
+        color: rgba(152, 152, 152, 1);
+      }
+    }
+
+  }
+  
+
+  &__time{
+    font-size: 0.75em;
+    text-align: right;
+    padding-right: 20px;
+    
+  }
+  &__phone{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    
+    a{
+      text-decoration: none;
+      font-weight: 200;
+    }
+    b{
+      margin-left: 0.25em;
+      font-weight: 500;
+    }
+  }
+
+  // &__btn-menu{
+  //   background-color: var(--cSecondary);
+  //   width: 195px;
+  //   flex-shrink: 0;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   @media (max-width: $tabWidth){
+  //     width: 130px;
+  //   }
+    
+  // }
+  
+  
+
+  // @media (max-width: 860px){
+  //    position: fixed;
+  //    z-index: 5;
+  //    background-color: white;
+  // }
+
+
+  
+
+
+  
+
+  
+}
+
+
+
+

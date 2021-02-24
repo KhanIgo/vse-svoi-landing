@@ -1,0 +1,24 @@
+:root{
+    --cntMaxWidth: 1450px;
+    --gutter: 15px;
+}
+$gridColsQty: 12;
+$flexGrowQty: 10;
+$flexShrinkQty: 10;
+$flexOrderQty: 10;
+
+
+$smWidth: 400px;
+$mdWidth: 600px;
+$lgWidth: 980px;
+$xlWidth: 1250px;
+$xxlWidth: 1900px;
+
+
+//$cntMaxWidth: 1170px;
+$mobWidth: $mdWidth;
+$margin: 500px;
+$marginStep: 10px;
+$fzMax: 5;
+$fzStep: 0.1;
+$fwMax: 1000;

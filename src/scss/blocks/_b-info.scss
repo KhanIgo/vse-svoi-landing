@@ -1,0 +1,32 @@
+.b-info {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 45px 0 55px;
+    @media (max-width: $mobWidth){
+        padding: 30px 0 35px;
+    }
+
+    &_1{
+        color: white;
+        margin-top: 195px;
+        background-image: url(img/b-info-bg.jpg);
+    }
+    &_2{
+        color: white;
+        margin-top: 195px;
+        background-image: url(img/b-info-bg-2.jpg);
+    }
+    @media (max-width: $xlWidth){
+        margin-top: 100px;
+    }
+    @media (max-width: $mobWidth){
+        margin-top: 30px;
+    }
+    &__cnt {
+
+    }
+    h2 {
+        color: inherit;
+    }
+}

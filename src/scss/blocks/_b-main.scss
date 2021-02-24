@@ -1,0 +1,93 @@
+.b-main {
+    background: url(images/b-main-bg.jpg) no-repeat;
+    background-position: center;
+    // overflow: hidden;
+    
+    &__cnt {
+        color: white;
+        flex-direction: column;
+        padding-top: 180px;
+        padding-bottom: 295px;
+        position: relative;
+        z-index: 2;
+        // position: relative;
+
+        @media (max-width: $tabWidth){
+            padding-top: 100px;
+            padding-bottom: 200px;
+        }
+        @media (max-width: 700px){
+            padding-top: 85px;
+            padding-bottom: 70px;
+        }
+        
+        &::before{
+            content: '';
+            background-color: rgba(0,0,0, 0.45);
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 50vw;
+            
+            left: 0;
+            top: 0;
+            // transform: skewX(22deg) ;
+            transform: skewX(22deg) translateX( calc( -100% + 510px ) ) ;
+            z-index: -1;
+
+            @media (max-width: 800px){
+                display: none;
+            }
+        }
+    }
+
+    &__offer {
+        @media (max-width: 700px){
+            br{ display: none; }
+        }
+    }
+
+    &__desc {
+        margin-top: 45px;
+        font-size: 1.5em;
+        @media (max-width: 700px){
+            margin-top: 25px;
+            font-size: 1.2em;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        width: 100%;
+        max-width: 1300px;
+        justify-content: space-between;
+        margin-top: 95px;
+        align-items: center;
+        @media (max-width: $tabWidth){
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 50px;
+        }
+        @media (max-width: $tabWidth){
+            margin-top: 35px;
+        }
+    }
+    &__action{
+        &_begin{
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            @media (max-width: $tabWidth){
+                margin-bottom: 100px;
+            }
+            @media (max-width: $mobWidth){
+                font-size: 0.75em;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    &__video {}
+}
