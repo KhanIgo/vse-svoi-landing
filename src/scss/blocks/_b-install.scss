@@ -1,0 +1,41 @@
+.b-install{
+    background-color: white;
+
+    &-row{
+        .cnt{
+            align-items: stretch;
+        }
+        .text-item{
+            min-height: 350px;
+        }
+        
+        .img-item{
+            position: relative;
+            z-index: 2;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 50vw;
+                height: 100%;
+                // background-color: rgba(77, 67, 87, 1);
+                background-image: var(--background);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0 0;
+                top: 0;
+                right: calc( 100% - 50vw );
+                z-index: -1;
+            }
+        }
+
+        &.reversed{
+            background-color: #F2FCFC;
+            .cnt{ flex-direction: row-reverse; }
+            .img-item{
+                &:before{
+                    left: calc( 100% - 50vw );
+                }
+            }
+        }
+    }
+}
