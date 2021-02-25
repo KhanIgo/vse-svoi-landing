@@ -4,6 +4,15 @@
 @import 'cnt-row';
 
 
+.gr-semi-screen{
+    width: 50%;
+    &_left{
+        padding-left: calc( 50vw - 725px );
+    }
+    &_right{
+        padding-left: calc( 50vw - 725px );
+    }
+}
 
 .flex{
     display: flex;

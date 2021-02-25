@@ -1,0 +1,19 @@
+.b-img-semi{
+        position: relative;
+        z-index: 2;
+        // --background: url(/images/8.jpg);
+        &:before{
+            content: '';
+            position: absolute;
+            width: 50vw;
+            height: 100%;
+            // background-color: rgba(77, 67, 87, 1);
+            background-image: var(--background);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            top: 0;
+            right: calc( 100% - 50vw );
+            z-index: -1;
+        }
+}

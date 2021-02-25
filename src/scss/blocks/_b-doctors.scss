@@ -1,0 +1,61 @@
+.b-doctors {
+    padding-top: 60px;
+    background-color: #E6F8F8;
+    &__cnt {
+        h3{
+            margin-bottom: 1em;
+        }
+    }
+    &__slider {
+        margin-top: 50px;
+    }
+    &__slide {
+    }
+    &__slide-cnt {
+        align-items: stretch;
+    }
+    
+}
+
+.b-doctor {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    &__photo {
+        width: 340px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    img {
+        max-width: 100%;
+        // width: 100%;
+        // height: 100%;
+        // object-fit: contain;
+        // object-position: center bottom;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 25px;
+        p{
+            font-size: 0.87em;
+        }
+        b{
+            font-weight: 600;
+        }
+    }
+    h5 {
+        br {
+        }
+    }
+    .green {
+    }
+    p {
+        br {
+        }
+    }
+    b {
+    }
+}

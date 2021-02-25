@@ -4,6 +4,14 @@
     background-size: cover;
     background-position: center;
     color: white;
+
+    &_4{
+        background: none;
+        overflow: hidden;
+        .b-lead-form__col_form{
+            transform: translateY(50px);   
+        }
+    }
      
     &__cnt{
         // align-items: center;

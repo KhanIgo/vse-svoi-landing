@@ -1,0 +1,50 @@
+.b-using {
+    padding-top: 80px;
+    background-color: var(--cGreen);
+    
+    &__cnt {
+        min-height: 300px;
+        background-color: rgba(77, 67, 87, 1);
+        align-items: stretch;
+        
+        
+        .gr-6 {}
+
+        .text-col{
+            color: white;
+            padding-top: 65px;
+            padding-bottom: 145px;
+            position: relative;
+            z-index: 2;
+            &:before{
+                content: '';
+                position: absolute;
+                height: 100%;
+                top: 0;
+                width: 60px;
+                left: -60px;
+                background-color: rgba(77, 67, 87, 1);
+            }
+            h3{
+                margin-bottom: 1em;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 0.5em;
+                }
+            }
+            p{
+                font-size: 1.25em;
+            }
+        }
+
+        .img-col{
+            // --bg: attr(data-bg);
+            // --background: var(--bg);
+        }
+        hr{
+            max-width: 185px;
+            margin-bottom: 2.5em;
+        }
+    }
+}

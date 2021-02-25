@@ -1,0 +1,31 @@
+.b-feedbacks {
+    background-color: #F8FDFD;
+    padding: 85px 0;
+    &__cnt {
+    }
+    h3 {
+        margin-bottom: 1.75em;
+    }
+    .gr-12 {
+    }
+    &__slider {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    
+}
+
+.b-feedback {
+    width: 340px;
+    height: 290px;
+    overflow: hidden;
+    margin-left: 15px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

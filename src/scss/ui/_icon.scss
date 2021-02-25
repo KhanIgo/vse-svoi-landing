@@ -34,16 +34,6 @@
         background-color: var(--cStar);
     }
 
-    &_play{
-        display: block;
-        width: 1em;
-        height: 1em;
-        background-image: url('img/icon/icon-play.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 50%;
-        overflow: hidden;
-    }
     &_menu{
         background-color: transparent;
         position: relative;
@@ -62,6 +52,18 @@
             bottom: 0;
         }
     }
+}
+.icon_play{
+    display: inline-block;
+    @extend .icon;
+    width: 1em;
+    height: 1em;
+    @include mask-icon('img/icon/icon_play.svg');
+    // background-image: url('img/icon/icon_play.svg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // // border-radius: 50%;
+    // overflow: hidden;
 }
 .icon_marker{
     // display: block;
