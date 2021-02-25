@@ -1,12 +1,43 @@
 .b-install{
     background-color: white;
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+    &__cnt{
+        h3{
+            margin-bottom: 1em;
+        }
+        
+    }
 
     &-row{
         .cnt{
             align-items: stretch;
+            padding-left: 0;
+            padding-right: 0;
         }
         .text-item{
             min-height: 350px;
+            padding-top: 55px;
+            padding-bottom: 30px;
+            padding-right: 20px;
+            
+            b{
+                font-weight: 600;
+            }
+
+            h5{
+               margin-bottom: 1.35em; 
+            }
+            
+            p{
+                font-size: 0.87em;
+                line-height: 1.2em;
+            }
+            a{
+                text-decoration: none;
+                color: var(--cGreen);
+            }
         }
         
         .img-item{
@@ -30,7 +61,13 @@
 
         &.reversed{
             background-color: #F2FCFC;
+            
             .cnt{ flex-direction: row-reverse; }
+            
+            .text-item{
+                padding-left: 45px;
+            }
+
             .img-item{
                 &:before{
                     left: calc( 100% - 50vw );
