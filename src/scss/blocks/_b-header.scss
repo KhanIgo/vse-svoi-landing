@@ -53,6 +53,8 @@
     }
 
     &_2{
+      margin-top: 20px;
+      align-items: center;
       p{
         display: flex;
         flex-direction: column;
@@ -102,6 +104,14 @@
     }
   }
 
+  &__social{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    font-size: 2em;
+    width: 3.75em;
+    margin-left: 25px;
+  }
   // &__btn-menu{
   //   background-color: var(--cSecondary);
   //   width: 195px;

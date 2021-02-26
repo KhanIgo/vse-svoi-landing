@@ -1,16 +1,24 @@
 .b-map {
-    padding: 45px 0;
+    // padding: 45px 0;
     @media (max-width: $mobWidth){
-        padding: 20px 0;
+        // padding: 20px 0;
     }
     &__cnt {
     }
-    &__title {
-        margin-bottom: 70px;
-        @media (max-width: $mobWidth){
-            margin-bottom: 25px;
-        }
-        h3 {
-        }
-    }
+
+    filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    
+}
+
+
+.ymaps-layers-pane {
+    filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter: grayscale(1);
 }

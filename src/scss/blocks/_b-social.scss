@@ -7,8 +7,31 @@
     @include mask-size(contain);
     width: 1em;
     height: 1em;
-    margin-right: 1.5em;
+    // margin-right: 1.5em;
     &:last-of-type{ margin-right: 0; } 
+
+    &_ig{
+        width: 1em;
+        height: 1em;
+        // @include mask('img/icon/soc-inst.svg');
+        @include mask('img/social/social_ig.svg');
+    }
+    &_yt{
+        width: 1em;
+        height: 1em;
+        // @include mask('img/icon/soc-inst.svg');
+        @include mask('img/social/social_yt.svg');
+    }
+    &_wa{
+        width: 1em;
+        height: 1em;
+        // @include mask('img/icon/soc-inst.svg');
+        @include mask('img/social/social_wa.svg');
+    }
+
+
+
+
 
     &_tg{
         width: 1.25em;
@@ -19,11 +42,7 @@
         height: 1.2em;
         @include mask('img/icon/soc-face.svg');
     }
-    &_ig{
-        width: 1.25em;
-        height: 1.25em;
-        @include mask('img/icon/soc-inst.svg');
-    }
+    
     &_ig-r{
         width: 2em;
         height: 2em;

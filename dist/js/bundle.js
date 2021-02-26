@@ -163,7 +163,18 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n // import * as PIXI from 'pixi.js'\n// let app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight});\n// document.body.appendChild(app.view);\n// window.jQuery = jquery;\n// window.$ = jquery;\n// require('./header');\n// require('./nav');\n// require('./menu-panel');\n// require('./tab');\n// require('./slider');\n// require('./fancybox');\n// require('./ham');\n// require(\"@fancyapps/fancybox\");\n// jquery(function($) {\n// });\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"jquery\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n // import * as PIXI from 'pixi.js'\n\n__webpack_require__(/*! ./map */ \"./src/js/map.js\"); // let app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight});\n// document.body.appendChild(app.view);\n// window.jQuery = jquery;\n// window.$ = jquery;\n// require('./header');\n// require('./nav');\n// require('./menu-panel');\n// require('./tab');\n// require('./slider');\n// require('./fancybox');\n// require('./ham');\n// require(\"@fancyapps/fancybox\");\n// jquery(function($) {\n// });\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/map.js":
+/*!***********************!*\
+  !*** ./src/js/map.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/js/map.js?");
 
 /***/ }),
 

@@ -8,6 +8,8 @@
 
     &__cnt {
         justify-content: space-between;
+        padding-left: 0;    
+        padding-right: 0;
      
         &_2{
             margin-top: 25px;
@@ -76,6 +78,15 @@
         text-decoration: none;
         color: inherit;
     }
+    &__social{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        font-size: 3.4em;
+        width: 2.2em;
+        padding-left: 0 !important;
+        margin-left: 25px;
+      }
     .b-social {
     }
 }
