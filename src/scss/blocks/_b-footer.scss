@@ -13,6 +13,7 @@
      
         &_2{
             margin-top: 25px;
+            align-items: center;
         }
         &_3{
             margin-top: 50px;
@@ -31,12 +32,33 @@
         i{
             color: var(--cGreen);
             font-size: 1.65em;
+            // padding-right: 2px;
+            // margin-left: 20px;
+
+            // position: relative;
+            // &:before{
+            //     content: '';
+            //     display: block;
+            //     width: 1px;
+            //     height: 50px;
+            //     position: absolute;
+            //     right: 0;
+            //     background-color: var(--cGreen);
+            // }
+        }
+        hr{
+            display: block;
+            width: 1px;
+            height: 50px;
+            margin: 0 20px;
+            background-color: var(--cGreen);
         }
         p{
             display: block;
-            border-left: solid 1px var(--cGreen);
-            margin-left: 20px;
-            padding-left: 20px;
+            // border-left: solid 1px var(--cGreen);
+            // padding-left: 20px;
+            margin-bottom: 0;
+            
         }
 
 
