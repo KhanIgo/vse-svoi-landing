@@ -21,7 +21,20 @@
             font-size: 1.17em;
         }
     }
-    &_2{}
+    &_2{
+        //.cnt{
+        //    align-items: center;
+        //}
+
+
+        .b-lead-form__col{
+            padding-top: 75px;
+        }
+
+        .b-lead-form__col_info{
+            font-size: 1.17em;
+        }
+    }
     &_3{}
     &_4{
         background: none;
