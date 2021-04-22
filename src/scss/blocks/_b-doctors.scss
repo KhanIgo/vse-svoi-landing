@@ -39,6 +39,14 @@
         display: flex;
         flex-direction: column;
         padding-left: 25px;
+        h5 {
+            font-size: 1.2em;
+            margin-bottom: 0.7em;
+
+            br {
+            }
+        }
+
         p{
             font-size: 0.87em;
         }
@@ -46,10 +54,7 @@
             font-weight: 600;
         }
     }
-    h5 {
-        br {
-        }
-    }
+
     .green {
     }
     p {
