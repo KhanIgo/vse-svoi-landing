@@ -3,4 +3,13 @@ hr{
     display: block;
     height: 1px;
     background-color: #fff;
+
+
+    &.decor{
+        width: 100%;
+        height: 5px;
+        background-color: var(--cGreen);
+        position: absolute;
+        top: 30px;
+    }
 }

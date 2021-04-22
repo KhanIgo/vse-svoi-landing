@@ -12,6 +12,10 @@
         }
 
         &_is-active{
+            .ui-accordeon__head{
+                color: var(--cGreen);
+
+            }
             .ui-accordeon__body{
                 max-height: 50000px;
             }
@@ -26,19 +30,28 @@
         }
     }
     &__head{
-        color: var(--cGreen);
         font-size: 1.13em;
         font-weight: 600;
         // padding-left: 3em;
         display: flex;
     }
     &__body{
-        font-size: 0.87em;
+        // font-size: 0.87em;
         max-height: 0;
         overflow: hidden;
     }
     &__body-inner{
         padding: 1.25em 0;
+        font-size: 1.1em;
+        font-weight: 600;
+
+
+        ul{
+            font-size: 1em;    
+            li{
+            font-size: 1em;
+        }} 
+
     }
 
     &__status-icon{

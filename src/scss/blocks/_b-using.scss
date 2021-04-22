@@ -1,11 +1,12 @@
 .b-using {
-    padding-top: 80px;
+    padding-top: 35px;
     background-color: var(--cGreen);
     
     &__cnt {
         min-height: 300px;
-        background-color: rgba(77, 67, 87, 1);
+        // background-color: rgba(77, 67, 87, 1);
         align-items: stretch;
+        position: relative;
         
         
         .gr-6 {}
@@ -16,14 +17,21 @@
             padding-bottom: 145px;
             position: relative;
             z-index: 2;
+            // background: url('/images/Group 65.jpg') no-repeat;
+
+            
             &:before{
                 content: '';
                 position: absolute;
                 height: 100%;
                 top: 0;
-                width: 60px;
+                width: calc(100% + 60px);
                 left: -60px;
-                background-color: rgba(77, 67, 87, 1);
+                // background-color: rgba(77, 67, 87, 1);
+                background: url('/images/Group 65.jpg') no-repeat;
+                background-position: left center;
+                background-size: cover;
+                z-index: -1;
             }
             h3{
                 margin-bottom: 1em;

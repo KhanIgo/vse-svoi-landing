@@ -2,12 +2,17 @@
   display: flex;
   margin-bottom: -90px;
   align-items: stretch;
+  .gr-6{
+    position: relative;
+  }
     .col-text{
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      padding-bottom: 160px;
-      h3{
+      // justify-content: flex-end;
+      // padding-bottom: 160px;
+      padding-top: 210px;
+      padding-bottom: 30px;
+      h1, h2, h3, h4, h5, h6{
         margin-bottom: 0.8em;
       }
       p{

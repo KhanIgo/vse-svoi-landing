@@ -16,4 +16,11 @@
             right: calc( 100% - 50vw );
             z-index: -1;
         }
+
+
+        &.bg-center{
+            &:before{
+                background-position: center;
+            }
+        }
 }

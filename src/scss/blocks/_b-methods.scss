@@ -1,6 +1,10 @@
 .b-methods {
     padding-top: 70px;
     padding-bottom: 60px;
+
+    background-image: url(/images/bg-patternn.png);
+
+
     &__cnt {
         h3{
             margin-bottom: 1.65em;
@@ -12,6 +16,8 @@
         list-style: none;
         display: flex;
         justify-content: center;
+        font-size: 1em;
+        margin-top: 15px;
     }
 }
 
@@ -33,23 +39,37 @@
         flex-grow: 1;
         padding-left: 35px;
         padding-right: 20px;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
 
     }
     &__title {
-        h5{
-            min-height: 3em;
-        }
+        font-size: 1.25em;
         margin-bottom: 1em;
+        h5{
+            font-size: 1em;
+            min-height: 3.5em;
+        }
         
     }
     
     &__text {
+        margin-top: 0.5em;
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
         p{
             font-size: 0.87em;
             line-height: 1.2em;
         }
         b{
             font-weight: 600;
+        }
+
+
+        .mt-a{
+            margin-top: auto;
         }
     }
     

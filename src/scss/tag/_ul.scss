@@ -1,3 +1,11 @@
 ul{
     list-style-position: inside;
+    //font-size: 0.875em;
+
+    li{
+        margin-bottom: 0.5em;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 }

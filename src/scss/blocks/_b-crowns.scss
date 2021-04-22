@@ -1,5 +1,5 @@
 .b-crowns {
-    padding: 65px 0 0;
+    padding: 55px 0 0;
     background-color: #E5E5E5;
     &__cnt {
         padding-left: 0;
@@ -16,7 +16,7 @@
     &__items {
         width: 100%;
         display: flex;
-        margin-top: 15px;
+        //margin-top: 15px;
     }
     
 }
@@ -31,27 +31,31 @@
     padding-top: 20px;
     border-right: solid 1px var(--cGreen);
     transition: 350ms ease-in-out;
+
+    font-size: 0.9em;
     &:hover{
         background-color: #F2FCFC;
     }
     &:last-of-type{ border-right: none; }
     
     &__top {
-        min-height: 240px;
+        min-height: 225px;
         border-bottom: solid 1px var(--cGreen);
-        padding: 0 15px;
+        padding: 0 7px;
         h6 {
             text-transform: uppercase;
             font-weight: 600;
             font-size: 1.12em;
             min-height: 3.5em;
             white-space: nowrap;
-            margin-bottom: 0.5em;
+            //margin-bottom: 0.5em;
+            margin-bottom: 1.25em;
         }
         .green {
         }
         p {
             font-size: 0.81em;
+            line-height: 1.3em;
         }
         b {
         }
@@ -60,15 +64,19 @@
     br {
     }
     &__bottom {
-        padding: 15px;
+        padding: 15px 7px;
         p {
             font-size: 0.81em;
         }
         ul{
             font-size: 0.81em;
             margin-bottom: 3.5em;
+            font-weight: 500;
             &:last-of-type{
                 margin-bottom: 0.5em;
+            }
+            li{
+                margin-bottom: 0.25em;
             }
         }
         b {

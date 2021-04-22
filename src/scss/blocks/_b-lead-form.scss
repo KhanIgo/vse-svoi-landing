@@ -5,11 +5,15 @@
     background-position: center;
     color: white;
 
+    ul{
+        font-size: 0.875em;
+    }
+
     &_4{
         background: none;
         overflow: hidden;
         .b-lead-form__col_form{
-            transform: translateY(50px);   
+            // transform: translateY(50px);   
         }
     }
      
@@ -20,7 +24,7 @@
 
     &__col{
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 25px;
 
         &_info{
             h2{
@@ -80,7 +84,7 @@
                 
             }
             ul{
-                margin-top: 1em;
+                margin-top: 2em;
             }
             form{
                 margin-top: 1em;
