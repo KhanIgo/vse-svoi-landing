@@ -2,28 +2,31 @@
     padding: 180px 0 100px;
     background-color: #F2FCFC;
 
-    &__items{
+    &__items-wrpr{
         margin-top: 30px;
-        ul{
-            width: 100%;
-            list-style: none;
-            display: flex;
-            flex-wrap: nowrap;
-            font-size: 1.25em;
-        }
-        li{
-            flex: 20% 1 0;
-            text-align: center;
-            border-right: solid 5px var(--cGreen);
-            
-            font-weight: 500;
-            padding: 0.3em 0;
-            font-size: 1em;
-            &:last-of-type{
-                border-right: none;
-            }
+    }
+
+    &__items{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 1.25em;
+    }
+
+    &__item{
+        flex: 20% 1 0;
+        text-align: center;
+        border-right: solid 5px var(--cGreen);
+
+        font-weight: 500;
+        padding: 0.3em 0;
+        font-size: 1em;
+        &:last-of-type{
+            border-right: none;
         }
     }
+
     &__accordeon{
         margin-top: 40px;
     }

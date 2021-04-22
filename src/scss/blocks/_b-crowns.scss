@@ -31,6 +31,7 @@
     padding-top: 20px;
     border-right: solid 1px var(--cGreen);
     transition: 350ms ease-in-out;
+    padding-bottom: 2em;
 
     font-size: 0.9em;
     &:hover{
@@ -91,6 +92,14 @@
         li {
         }
     }
+    &__bottom-title {
+        min-height: 2em;
+    }
+    &__bottom-plus {
+        margin-top: 1em;
+        min-height: 11em;
+    }
+    &__bottom-minus {}
     .red {
     }
     ul {

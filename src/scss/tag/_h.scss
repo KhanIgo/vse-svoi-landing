@@ -14,7 +14,7 @@ h1,
         // text-transform: uppercase;
         font-weight: 500;
     }
-    h1 {
+    h1, .h1 {
         // font-size: 3.755em;
         font-size: 2.8em;
         font-weight: 500;
@@ -25,7 +25,7 @@ h1,
         // @media (max-width: $tabWidth){ font-size: 2.5em; }
         // @media (max-width: 700px){ font-size: 1.8em; }
     }
-    h2 {
+    h2, h2 {
         // font-size: 3.43em;
         font-size: 1.875em;
         font-weight: 600;
@@ -44,11 +44,11 @@ h1,
         //     font-size: 1.2em;
         // }
     }
-    h4 {
-        font-size: 1.75em;
+    h4,  .h4 {
+        font-size: 1.5em;
         @media (max-width: 700px){ font-size: 1.2em; }
     }
-    h5 {
+    h5, h5 {
         font-size: 1.125em;
         font-weight: 600;
         @media (max-width: $mobWidth){
@@ -56,7 +56,7 @@ h1,
             line-height: 1.3em;
         }
     }
-    h6 {
+    h6, .h6 {
         font-size: 1.12em;
         @media (max-width: $mobWidth){
             font-size: 1em;

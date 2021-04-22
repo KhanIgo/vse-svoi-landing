@@ -1,11 +1,33 @@
 ul{
-    list-style-position: inside;
+    //list-style-position: inside;
     //font-size: 0.875em;
+    list-style: none;
 
     li{
         margin-bottom: 0.5em;
+        position: relative;
+        padding-left: 0.7em;
+        &:before{
+            content: '';
+            display: block;
+            background-color: currentColor;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            width: 0.2em;
+            height: 0.2em;
+            //w0.2e
+            top: 0.4em;
+        }
         &:last-child{
             margin-bottom: 0;
+        }
+    }
+
+
+    &.no-marker{
+        li{
+
         }
     }
 }

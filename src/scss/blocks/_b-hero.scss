@@ -63,6 +63,7 @@
     }
     h1 {
         color: inherit;
+        margin-bottom: 0.7em;
     }
     &__acts{
         margin-top: 50px;
@@ -82,102 +83,7 @@
             }
         }
     }
-    &__footer {
-        position: absolute;
-        bottom: 0;
-        @media (max-width: $mobWidth){
-            position: relative;
-        }
-    }
-    &__nav {
-        width: 100%;
-        font-weight: 700;
-        font-size: 1.12em;
-        padding: 25px 0;
-        ul {
-            width: 100%;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            @media (max-width: $mobWidth){
-                flex-wrap: wrap;
-                // justify-content: center;
-                // flex-direction: column;
-            }
-        }
-        li {
-            position: relative;
-            @media (max-width: $mobWidth){
-                flex: 50% 0 0;
-                padding: 6px;
-                text-align: left;
-            }
-            &:hover{
-                >a{
-                    color: var(--cSecondary);
-                    border-bottom: solid 1px currentColor;
-                    transition: 350ms ease-in-out;
-                }
-                .submenu{
-                    opacity: 1;
-                    visibility: visible;
-                    display: block;
-                }
-            }
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        .submenu{
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 200px;
-            z-index: 10;
-            padding: 10px 0;
-            @media (max-width: $mobWidth){
-                position: relative;
-                opacity: 1;
-                visibility: visible;
-                top: 0;
-                padding: 0;
-                margin: 0;
-                display: none;
-            }
 
-            opacity: 0;
-            visibility: hidden;
-            transition: 350ms ease-in-out;
-
-            ul{
-                background-color: rgba(0,0,0, 0.85);
-                padding: 10px 15px;
-                display: flex;
-                flex-direction: column;
-                // align-items: center;
-                li{
-                    font-size: 0.8em;
-                    margin: 5px 0;
-                    @media (max-width: $mobWidth){
-                        margin: 0;  
-                    }
-                }
-                @media (max-width: $mobWidth){
-                    background-color: transparent;
-                    padding: 5px 10px;
-                    
-                }
-            }
-        }
-    }
-    
-    &__social {
-        padding: 30px 0;
-        border-top: solid 1px rgba(255, 255, 255, 0.2);
-    }
-    .b-social {
-    }
 }
 
 
