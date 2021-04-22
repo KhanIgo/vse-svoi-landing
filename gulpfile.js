@@ -163,6 +163,13 @@ gulp.task('serve', function(done) {
     base: path.target,
     open: true   
   });
+
+// bs.init({
+//     server: {
+//         baseDir: "./dist"
+//     }
+// });
+
     done();
 });
 
